@@ -33,15 +33,15 @@ const Start = (props: Props) => {
       <h1>React Tic Tac Toe</h1>
       <form onSubmit={handleSubmit}>
         <div>
-        <label htmlFor="gridSize">Grid Size</label>
-                  <select name="gridSize" id="gridSize"
-            value={gridSize}
+        <label>Grid Size</label>
+          <select name="gridSize" id="gridSize"
+            value={gridSize} className="size-selector"
              onChange={(e) => handleGridSizeChange(e)}
-        >
-            <option value={3}>3x3</option>
-            <option value={4}>4x4</option>
-            <option value={5}>5x5</option>
-            <option value={6}>6x6</option>
+          >
+              <option value={3}>3x3</option>
+              <option value={4}>4x4</option>
+              <option value={5}>5x5</option>
+              <option value={6}>6x6</option>
             </select>  
         </div>
         <div>

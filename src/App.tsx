@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import Game from "./pages/Game";
 import Start from "./pages/Start";
 import Finished from "./pages/Finished";

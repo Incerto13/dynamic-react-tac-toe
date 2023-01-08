@@ -8,13 +8,14 @@ interface Props {
 }
 const Game = (props: Props) => {
   const { board, handleClick, gridSize } = props;
-    
+  const leftMargin = gridSize === 3 ? 42 : gridSize === 4 ? 37 : gridSize === 5 ? 35 : 33;
   const styles = {
     board: {
       display: "grid",
       gridTemplateColumns: `repeat(${gridSize}, 1fr)`,
       gridTemplateRows:  `repeat(${gridSize}, 1fr)`,
-      width: "30px"
+      width: "30px",
+      marginLeft: `${leftMargin}vw`
     }
   };
   return (

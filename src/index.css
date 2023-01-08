@@ -3,11 +3,15 @@
   text-align: center;
 }
 
+.size-selector {
+  margin-left: 10px;
+}
+
 .name-input {
   margin-left: 10px;
 }
 
 .start-btn {
   margin-top: 10px;
-  margin-left: -35px;
 }
+
